@@ -1,0 +1,285 @@
+{
+	"info": {
+		"_postman_id": "8bf11b1f-171c-4211-ba79-2f1af543ce81",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9182329",
+		"_collection_link": "https://asdasd-2077.postman.co/workspace/asdasd-Workspace~be90f561-2599-4192-bc47-2bbeeb46f19e/collection/9182329-8bf11b1f-171c-4211-ba79-2f1af543ce81?action=share&source=collection_link&creator=9182329"
+	},
+	"item": [
+		{
+			"name": "lendo",
+			"item": [
+				{
+					"name": "http://localhost:8080/auth/api/user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\":\"lendo\",\n    \"password\": \"123456\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/auth/api/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"auth",
+								"api",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/api/users?page=0&per_page=30",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsZW5kbyIsImlhdCI6MTczNzIxMDc4OSwiZXhwIjoxNzM3MjE0Mzg5fQ.k804ifBN5OZjz-1u0CXCSK-HZ6YiWiRmjvYzSpqWZQM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsZW5kbyIsImlhdCI6MTczNzIwNjM2NSwiZXhwIjoxNzM3MjA5OTY1fQ.UHAHYcElLsmgRXeX9j4UAEXjaN4dCVy-DzeeF4LLduQ",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\":\"lendo\",\n    \"password\":\"123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/users?page=0&per_page=30",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "per_page",
+									"value": "30"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/api/users/comments?page=0&per_page=100",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsZW5kbyIsImlhdCI6MTczNzIxMDc4OSwiZXhwIjoxNzM3MjE0Mzg5fQ.k804ifBN5OZjz-1u0CXCSK-HZ6YiWiRmjvYzSpqWZQM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsZW5kbyIsImlhdCI6MTczNzIwNjM2NSwiZXhwIjoxNzM3MjA5OTY1fQ.UHAHYcElLsmgRXeX9j4UAEXjaN4dCVy-DzeeF4LLduQ",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\":\"lendo\",\n    \"password\":\"123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/users/comments?page=0&per_page=100",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"comments"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "per_page",
+									"value": "100"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/api/users/posts?page=0&per_page=100",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsZW5kbyIsImlhdCI6MTczNzIxMDc4OSwiZXhwIjoxNzM3MjE0Mzg5fQ.k804ifBN5OZjz-1u0CXCSK-HZ6YiWiRmjvYzSpqWZQM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsZW5kbyIsImlhdCI6MTczNzIwNjM2NSwiZXhwIjoxNzM3MjA5OTY1fQ.UHAHYcElLsmgRXeX9j4UAEXjaN4dCVy-DzeeF4LLduQ",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\":\"lendo\",\n    \"password\":\"123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/users/posts?page=0&per_page=100",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"posts"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "per_page",
+									"value": "100"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/api/users/134760/posts?page=0&per_page=8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsZW5kbyIsImlhdCI6MTczNzIxMDc4OSwiZXhwIjoxNzM3MjE0Mzg5fQ.k804ifBN5OZjz-1u0CXCSK-HZ6YiWiRmjvYzSpqWZQM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsZW5kbyIsImlhdCI6MTczNzIwNjM2NSwiZXhwIjoxNzM3MjA5OTY1fQ.UHAHYcElLsmgRXeX9j4UAEXjaN4dCVy-DzeeF4LLduQ",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\":\"lendo\",\n    \"password\":\"123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/users/134760/posts?page=0&per_page=8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"134760",
+								"posts"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "per_page",
+									"value": "8"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
