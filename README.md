@@ -19,6 +19,8 @@ This is a Spring Boot application demonstrating JWT authentication and basic CRU
 
 This API allows users to authenticate using a username and password, after which they receive a JWT token that can be used for accessing other endpoints like posts, comments, and users.
 
+Note: Collection of Lendo assessment is placed in root of the repo
+
 ### Default Users
 - **Username**: `lendo`, **Password**: `123456`
 - **Username**: `aurang`, **Password**: `123456`
@@ -39,4 +41,3 @@ This endpoint is used to authenticate a user and retrieve a JWT token.
   "password": "123456"
 }
 
-Note: Collection of Lendo assessment is placed in root of the repo
