@@ -39,3 +39,4 @@ This endpoint is used to authenticate a user and retrieve a JWT token.
   "password": "123456"
 }
 
+Note: Collection of Lendo assessment is placed in root of the repo
